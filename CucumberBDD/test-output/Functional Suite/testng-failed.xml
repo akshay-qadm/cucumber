@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional Suite]">
+  <test name="Search Cars Test">
+    <classes>
+      <class name="Runner.RunCuke"/>
+    </classes>
+  </test> <!-- Search Cars Test -->
+  <test name="Search Cars Test(failed)">
+    <classes>
+      <class name="Runner.RunCuke">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runner.RunCuke -->
+    </classes>
+  </test> <!-- Search Cars Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->
